@@ -38,7 +38,7 @@ else {
     name: 'session',
     keys: [config.secret],
 
-    // Cookie Options
+    // sample cookie options
     maxAge: 24 * 60 * 60 * 1000 // 24 hours
   }));
 
@@ -47,6 +47,7 @@ else {
   app.post('/user', api.createuser);
   app.put('/user/:id', api.changeuser);
   app.delete('/user/:id', api.deletuser);
+  app.get("/start", api.startJDLgeneration);
 
   app.listen(port, function () {
     console.log('Worker %s spawned for port %s.', cluster.worker.id, port);

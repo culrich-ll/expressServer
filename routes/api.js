@@ -47,3 +47,11 @@
     console.log('Worker: ' + cluster.worker.id);
     return next();
   };
+
+  exports.startJDLgeneration = function (req, res, next) {
+    var message = 'Start JDL generation';
+    res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
+    res.end(JSON.stringify(message));
+    console.log('Worker: ' + cluster.worker.id);
+    return next();
+  };
