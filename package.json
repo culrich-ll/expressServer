@@ -1,0 +1,18 @@
+{
+  "name": "express-cluster",
+  "version": "1.0.0",
+  "description": "Node.js example illustrating how to write a clustered RESTful API using the express library.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "1.14.1",
+    "cookie-session": "^1.2.0",
+    "express": "4.13.4",
+    "express-session": "^1.12.1",
+    "method-override": "2.3.5"
+  },
+  "engine": "node 6.9.5",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "logicline GmbH"
+}
